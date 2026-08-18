@@ -1,0 +1,120 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+.venv
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Data files (common for pipelines)
+*.csv
+*.parquet
+*.xlsx
+*.json
+data/
+raw_data/
+processed_data/
+output/
+downloads/
+
+# Environment variables & Secrets
+.env
+.env.local
+.env.*.local
+.env.prod
+secrets/
+*.pem
+*.key
+*.crt
+
+# API Keys & Credentials
+credentials.json
+config/secrets/
+apikeys.txt
+
+# Logs & Debug
+*.log
+logs/
+debug/
+*.log.*
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+
+# Temporary & Cache files
+*.tmp
+*.temp
+.cache/
+temp/
+tmp/
+*.bak
+
+# OS specific
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+*.cover
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Node (if applicable)
+node_modules/
+npm-debug.log
+package-lock.json
+
+# Local configuration
+config.local.yaml
+config.local.json
+settings.local.py
+
+# Compiled files
+*.pyc
+*.pyo
+
+# IDE specific
+.vscode/settings.json
+.vscode/launch.json

@@ -19,7 +19,6 @@ df = pd.read_sql(query, engine)
 
 
 # Show the first 5 rows
-print(df.head())
 
 # Show number of rows
 print("\nRows extracted:", len(df))

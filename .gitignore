@@ -43,11 +43,8 @@ ENV/
 *.parquet
 *.xlsx
 *.json
-data/
-raw_data/
-processed_data/
-output/
-downloads/
+
+
 
 # Environment variables & Secrets
 .env
@@ -91,11 +88,6 @@ Thumbs.db
 .LSOverride
 
 # Testing
-.pytest_cache/
-.coverage
-htmlcov/
-.tox/
-*.cover
 
 # Jupyter
 .ipynb_checkpoints/

@@ -1,0 +1,151 @@
+[0m13:13:51.534100 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000261164D3560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026113BFE0F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000261164D2210>]}
+
+
+============================== 13:13:51.600399 | fbb03f8b-9544-4a2a-b3d8-3ace8622540f ==============================
+[0m13:13:51.600399 [info ] [MainThread]: Running with dbt=1.11.0
+[0m13:13:51.602533 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\hp\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt init ecommerce_dbt', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m13:13:51.698865 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\hp\.dbt
+[0m13:13:51.708656 [debug] [MainThread]: Starter project path: C:\Users\hp\ecommerce-data-pipeline\.dbt-venv\Lib\site-packages\dbt\include\starter_project
+[0m13:13:51.805049 [info ] [MainThread]: 
+Your new dbt project "ecommerce_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:13:51.806371 [info ] [MainThread]: Setting up your profile.
+[0m13:18:41.078512 [info ] [MainThread]: Profile ecommerce_dbt written to C:\Users\hp\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m13:18:41.082008 [debug] [MainThread]: Command `dbt init` succeeded at 13:18:41.080522 after 289.85 seconds
+[0m13:18:41.083015 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026113BFE0F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000261159FC7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000261159FC860>]}
+[0m13:18:41.084063 [debug] [MainThread]: Flushing usage events
+[0m13:18:43.756828 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:19:25.175089 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CF2B122330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CF2B121370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CF2A2FE780>]}
+
+
+============================== 13:19:25.182704 | 4236d9c6-6229-4ccf-9547-441685762417 ==============================
+[0m13:19:25.182704 [info ] [MainThread]: Running with dbt=1.11.0
+[0m13:19:25.184731 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\hp\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m13:19:25.238657 [info ] [MainThread]: dbt version: 1.11.0
+[0m13:19:25.239654 [info ] [MainThread]: python version: 3.12.10
+[0m13:19:25.240651 [info ] [MainThread]: python path: C:\Users\hp\ecommerce-data-pipeline\.dbt-venv\Scripts\python.exe
+[0m13:19:25.241648 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m13:19:25.359844 [info ] [MainThread]: Using profiles dir at C:\Users\hp\.dbt
+[0m13:19:25.360854 [info ] [MainThread]: Using profiles.yml file at C:\Users\hp\.dbt\profiles.yml
+[0m13:19:25.361866 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\hp\ecommerce-data-pipeline\dbt_project.yml
+[0m13:19:25.364904 [info ] [MainThread]: adapter type: postgres
+[0m13:19:25.365916 [info ] [MainThread]: adapter version: 1.11.0
+[0m13:19:25.366923 [info ] [MainThread]: Configuration:
+[0m13:19:25.368327 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:19:25.369551 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m13:19:25.371019 [info ] [MainThread]: Required dependencies:
+[0m13:19:25.372532 [debug] [MainThread]: Executing "git --help"
+[0m13:19:25.519500 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:19:25.521849 [debug] [MainThread]: STDERR: "b''"
+[0m13:19:25.522874 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:19:25.525285 [info ] [MainThread]: Connection:
+[0m13:19:25.526324 [info ] [MainThread]:   host: local host
+[0m13:19:25.527499 [info ] [MainThread]:   port: 5432
+[0m13:19:25.528949 [info ] [MainThread]:   user: postgre
+[0m13:19:25.531951 [info ] [MainThread]:   database: ecommerce_db
+[0m13:19:25.534062 [info ] [MainThread]:   schema: analytics
+[0m13:19:25.537472 [info ] [MainThread]:   connect_timeout: 10
+[0m13:19:25.540035 [info ] [MainThread]:   role: None
+[0m13:19:25.541043 [info ] [MainThread]:   search_path: None
+[0m13:19:25.542972 [info ] [MainThread]:   keepalives_idle: 0
+[0m13:19:25.545075 [info ] [MainThread]:   sslmode: None
+[0m13:19:25.547165 [info ] [MainThread]:   sslcert: None
+[0m13:19:25.548334 [info ] [MainThread]:   sslkey: None
+[0m13:19:25.550367 [info ] [MainThread]:   sslrootcert: None
+[0m13:19:25.554367 [info ] [MainThread]:   application_name: dbt
+[0m13:19:25.556362 [info ] [MainThread]:   autocommit: False
+[0m13:19:25.558744 [info ] [MainThread]:   retries: 1
+[0m13:19:25.561963 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m13:19:26.387156 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m13:19:34.141587 [debug] [MainThread]: Using postgres connection "debug"
+[0m13:19:34.142593 [debug] [MainThread]: On debug: select 1 as id
+[0m13:19:34.142593 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:19:34.149262 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+could not translate host name "local host" to address: Name or service not known
+
+[0m13:19:34.151302 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m13:19:34.151302 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m13:19:34.152349 [debug] [MainThread]: On debug: No close available on handle
+[0m13:19:34.153394 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m13:19:34.153394 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m13:19:34.154400 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\hp\ecommerce-data-pipeline\dbt_project.yml> not found
+
+[0m13:19:34.155445 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  could not translate host name "local host" to address: Name or service not known
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m13:19:34.157720 [debug] [MainThread]: Command `dbt debug` failed at 13:19:34.156451 after 9.62 seconds
+[0m13:19:34.157720 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:19:34.158769 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CF2B78AF60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CF2B122330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CF2B121370>]}
+[0m13:19:34.159812 [debug] [MainThread]: Flushing usage events
+[0m13:19:36.874080 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:59:39.573389 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000273D16B0AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000273CEF39090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000273D3F93890>]}
+
+
+============================== 14:59:39.617525 | dc862aba-d9a5-45b3-8200-74916fae2984 ==============================
+[0m14:59:39.617525 [info ] [MainThread]: Running with dbt=1.12.0
+[0m14:59:39.622781 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\hp\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m14:59:39.627241 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\hp\ecommerce-data-pipeline\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:59:39.635532 [debug] [MainThread]: Command `dbt run` failed at 14:59:39.635121 after 0.83 seconds
+[0m14:59:39.637219 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000273D3F11E00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000273D3FE8A70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000273D3FC9BF0>]}
+[0m14:59:39.638765 [debug] [MainThread]: Flushing usage events
+[0m14:59:46.157371 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:00:03.561845 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FCB0C0AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FC8959090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FCD9A7890>]}
+
+
+============================== 15:00:03.573124 | b2038a78-88e0-400c-8a99-fddc53c03f08 ==============================
+[0m15:00:03.573124 [info ] [MainThread]: Running with dbt=1.12.0
+[0m15:00:03.574826 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\hp\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'log_path': 'logs'}
+[0m15:00:03.576229 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\hp\ecommerce-data-pipeline\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:00:03.578947 [debug] [MainThread]: Command `dbt run` failed at 15:00:03.578632 after 0.40 seconds
+[0m15:00:03.579983 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FCD921E00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FCD9F8A70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012FCD9D9BF0>]}
+[0m15:00:03.581284 [debug] [MainThread]: Flushing usage events
+[0m15:00:05.714917 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:23:36.724049 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000176F57BD070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000176F7C47830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000176F768C860>]}
+
+
+============================== 21:23:36.748178 | bf683e59-366a-43ff-9ca7-72b5883d2ed5 ==============================
+[0m21:23:36.748178 [info ] [MainThread]: Running with dbt=1.11.0
+[0m21:23:36.751212 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\hp\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt build', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m21:23:36.754204 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\hp\ecommerce-data-pipeline\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m21:23:36.757703 [debug] [MainThread]: Command `dbt build` failed at 21:23:36.757703 after 0.68 seconds
+[0m21:23:36.759892 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000176F80C95B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000176F46A57F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000176F57BD070>]}
+[0m21:23:36.760883 [debug] [MainThread]: Flushing usage events
+[0m21:23:39.123222 [debug] [MainThread]: An error was encountered while trying to flush usage events

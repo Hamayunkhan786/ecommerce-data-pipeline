@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: dim_customer
+    columns:
+      - name: customer_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: dim_product
+    columns:
+      - name: stock_code
+        data_tests:
+          - not_null
+          - unique
+
+  - name: dim_date
+    columns:
+      - name: date_key
+        data_tests:
+          - not_null
+          - unique

@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: fact_sales
+    description: "Final cleaned sales fact table for analytics and reporting"
+
+    columns:
+      - name: invoice_no
+        tests:
+          - not_null
+
+      - name: stock_code
+        tests:
+          - not_null
+
+      - name: quantity
+        tests:
+          - not_null
+
+      - name: sales_amount
+        tests:
+          - not_null
+
+      - name: invoice_date
+        tests:
+          - not_null

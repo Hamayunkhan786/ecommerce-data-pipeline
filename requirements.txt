@@ -1,15 +1,24 @@
-# Data processing
+# Data processing and analysis
+# Used by the extraction, transformation, and pipeline scripts to load,
+# clean, filter, and aggregate ecommerce records.
 pandas==3.0.5
+# Provides numerical support for pandas calculations and data operations.
 numpy==2.5.2
 
 # Database connectivity
+# Creates the PostgreSQL engine used by the Python pipeline.
 SQLAlchemy==2.0.52
+# PostgreSQL driver used by SQLAlchemy to connect to the database.
 psycopg2-binary==2.9.12
 
 # Configuration and Excel input
+# Loads DB_HOST, DB_PORT, DB_NAME, DB_USER, and DB_PASSWORD from .env.
 python-dotenv==1.2.3
+# Reads the source Online Retail.xlsx workbook.
 openpyxl==3.1.5
 
-# dbt and PostgreSQL adapter
+# dbt transformation framework
+# Runs models, tests, seeds, snapshots, and macros in ecommerce_dbt.
 dbt-core==1.11.0
+# Enables dbt to build and query models in PostgreSQL.
 dbt-postgres==1.11.0

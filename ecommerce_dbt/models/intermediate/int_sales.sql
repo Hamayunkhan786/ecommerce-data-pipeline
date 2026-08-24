@@ -24,7 +24,7 @@ cleaned AS (
         unit_price,
         customer_id,
         country,
-        quantity * unit_price AS sales_amount
+        {{ calculate_sales_amount('quantity', 'unit_price') }} AS sales_amount
     FROM source_data
     WHERE quantity > 0
       AND unit_price > 0

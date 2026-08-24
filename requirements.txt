@@ -18,7 +18,12 @@ python-dotenv==1.2.3
 openpyxl==3.1.5
 
 # dbt transformation framework
-# Runs models, tests, seeds, snapshots, and macros in ecommerce_dbt.
+# Runs models, built-in data tests, seeds, snapshots, and macros in ecommerce_dbt.
 dbt-core==1.11.0
 # Enables dbt to build and query models in PostgreSQL.
 dbt-postgres==1.11.0
+
+# Testing
+# dbt-core provides the schema tests defined in the model YAML files,
+# including not_null and unique checks. Python pipeline tests use unittest,
+# which is included in the Python standard library and needs no package entry.

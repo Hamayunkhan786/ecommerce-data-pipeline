@@ -74,8 +74,11 @@ The dbt project in `ecommerce_dbt/` contains:
 From the project root:
 
 ```bash
-python src/pipeline.py
+python -m src.pipeline
 ```
+
+The pipeline extracts the workbook, cleans and loads raw and clean PostgreSQL
+tables, runs dbt models and tests, and exports the analytics CSV files.
 
 This runs the cleaning and loading flow for the online retail dataset.
 
